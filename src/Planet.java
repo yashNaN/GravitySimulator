@@ -16,6 +16,8 @@ public class Planet {
 	double ay;
 	double mass;
 	Color color;
+	double ticInit; //= 0;
+	double ticNow; //= 0; 
 	double scale = 1496000;
 	double timerTime = 2;
 	ArrayList<Point> myPoints;
@@ -27,6 +29,8 @@ public class Planet {
 		clicked = false; 
 		this.x = x;
 		this.y = y;
+		ticInit = System.currentTimeMillis();
+		ticNow = 0;
 		//this.p = p;
 		ax = 0;
 		ay = 0;
@@ -171,14 +175,30 @@ public class Planet {
 //			}	
 //		}
 		//x = xi + vt + .5at^2
-		myPoints.add(new Point((int) Math.round(x), (int) Math.round(y)));
-		ax = getForceX()/mass;
-		ay = getForceY()/mass;
-		x = (x + vx*(timerTime/1000) + .5*ax*Math.pow((timerTime/1000), 2));
-		y = (y + vy*(timerTime/1000) + .05*ay*Math.pow(timerTime/1000,2));
-		vx = vx + ax*(timerTime/1000);
-		vy = vy + ay*(timerTime/1000);	
-		
+		ticInit = ticNow;
+		ticNow = System.currentTimeMillis();
+		//if(/*ticNow - ticInit*/ 0 == 0 ){
+			myPoints.add(new Point((int) Math.round(x), (int) Math.round(y)));
+			ax = getForceX()/mass;
+			ay = getForceY()/mass;
+			x = (x + vx*(timerTime/1000) + .5*ax*Math.pow((timerTime/1000), 2));
+			y = (y + vy*(timerTime/1000) + .05*ay*Math.pow(timerTime/1000,2));
+			vx = vx + ax*(timerTime/1000);
+			vy = vy + ay*(timerTime/1000);	
+//		}
+//		else
+//		{
+//			
+//			double timeDiff = ticNow - ticInit; 
+//			System.out.println("Time Diff is: " + timeDiff/1000);
+//			myPoints.add(new Point((int) Math.round(x), (int) Math.round(y)));
+//			ax = getForceX()/mass;
+//			ay = getForceY()/mass;
+//			x = (x + vx*(timeDiff/1000) + .5*ax*Math.pow((timeDiff/1000), 2));
+//			y = (y + vy*(timeDiff/1000) + .05*ay*Math.pow(timeDiff/1000,2));
+//			vx = vx + ax*(timeDiff/1000);
+//			vy = vy + ay*(timeDiff/1000);	
+//		}
 	}
 	
 }

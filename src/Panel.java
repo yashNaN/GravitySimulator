@@ -163,7 +163,7 @@ public class Panel extends JPanel implements ChangeListener{
 				}
 				
 			}
-
+ 
 			@Override
 			public void keyReleased(KeyEvent arg0) {
 				// TODO Auto-generated method stub
