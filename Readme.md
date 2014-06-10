@@ -1,10 +1,6 @@
 Readme for Space Gravity Simulator
 
-This is a simple program that simulates gravity in space written in Java. The equation used to calculate gravity is Gmm/r^2 with G
-being the universal gravitation constant, m is the mass of one object in kg, and other m is the mass of the other object in kg, and r
-is the distance between the two objects. The program calculates the total gravity on a single object by calculating the force of gravity 
-due to every other object in the x direction and the force of gravity due to every other object in  the y direction. All the values and 
-calculations in the x and y directions are dones seperately. The program adds all these forces to calculate the acceleartion and velocity
+This is a simple program that simulates gravity in space written in Java. The equation used to calculate gravity is Gmm/r^2 with G being the universal gravitation constant, m is the mass of one object in kg, and other m is the mass of the other object in kg, and r is the distance between the two objects. The program calculates the total gravity on a single object by calculating the force of gravity due to every other object in the x direction and the force of gravity due to every other object in  the y direction. All the values and calculations in the x and y directions are done separately. The program adds all these forces to calculate the acceleration and velocity
 in each direction. 
 
 Starting the Simulator
@@ -14,10 +10,11 @@ Starting the Simulator
 Doing Stuff in the Simulator
 	Adding objects:
 		1. Right click on the location you want to add the object
-		2. In the pop up fill in the initial x velocity, initial y velocity, mass, and choose a color.
+		2. In the pop up fill in the initial x velocity, initial y velocity, mass, and
+                    choose a color.
 		3. Press OK to create the object. 
-		4. Press Cancel to cancel the creation process.
-	Moving the Screen:
+		4. Press Cancel to cancel the creation process
+Moving the Screen:
 		- You can change the location of the screen by moving the mouse to any of the edges.
 		- On the top left corner there are coordiante which indicate the the coordiante of the screen.
 		- To return to the origin (where the screen is when the program is started) press the ctrl key.
