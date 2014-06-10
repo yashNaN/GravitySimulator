@@ -1,4 +1,6 @@
-Readme for Space Gravity Simulator
+If you are reading this on GitHub please do yourself a favor and open this in a text editor. The formatting is so much better than this. 
+
+Readme for Space Gravity Simulator by Yashwanth Nannapaneni
 
 This is a simple program that simulates gravity in space written in Java. The equation used to calculate gravity is Gmm/r^2 with G being the universal gravitation constant, m is the mass of one object in kg, and other m is the mass of the other object in kg, and r is the distance between the two objects. The program calculates the total gravity on a single object by calculating the force of gravity due to every other object in the x direction and the force of gravity due to every other object in  the y direction. All the values and calculations in the x and y directions are done separately. The program adds all these forces to calculate the acceleration and velocity
 in each direction. 
@@ -48,5 +50,12 @@ Hotkeys:
 	Ctrl. Return screen to starting position
 	Space. Pause the game
 	F1. Take a screenshot
+
+Troubleshooting:
+	-If you have any errors try updating Java and your JDK.
+	-If errors still persist email me at yashwanth620@gmail.com 
+	
+To access the source code go to https://github.com/yash620/GravitySimulator.
+
 
 	
