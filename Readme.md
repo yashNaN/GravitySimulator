@@ -1,4 +1,3 @@
-If you are reading this on GitHub please do yourself a favor and open this in a text editor. The formatting is so much better than this. 
 
 Readme for Space Gravity Simulator by Yashwanth Nannapaneni
 
